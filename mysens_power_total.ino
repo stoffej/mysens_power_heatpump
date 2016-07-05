@@ -43,7 +43,7 @@
 #define MAX_WATT 10000          // Max watt value to report. This filetrs outliers.
 #define INTERRUPT DIGITAL_INPUT_SENSOR-2 // Usually the interrupt = pin -2 (on uno/nano anyway)
 #define CHILD_ID 1              // Id of the sensor child
-#define MY_NODE_ID 10 
+#define MY_NODE_ID 11 
 unsigned long SEND_FREQUENCY = 20000; // Minimum time between send (in milliseconds). We don't wnat to spam the gateway.
 MySensor gw;
 double ppwh = ((double)PULSE_FACTOR)/1000; // Pulses per watt hour
@@ -65,7 +65,7 @@ void setup()
   gw.begin(incomingMessage,MY_NODE_ID);
 
   // Send the sketch version information to the gateway and Controller
-  gw.sendSketchInfo("Energy Meter", "1.0");
+  gw.sendSketchInfo("Energy Meter Nibe", "1.0");
 
   // Register this device as power sensor
   gw.present(CHILD_ID, S_POWER);
