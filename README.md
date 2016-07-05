@@ -1,10 +1,8 @@
 # mysens_power_total
 kopplingslist inkommande från detektorn
 
-orange = 5V
+grön = 5V
 
-orange/vit = NC
+vit = pulser
 
-blå = pulser
-
-blå/vit = jord
+brun = jord
