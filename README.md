@@ -1,4 +1,4 @@
-# mysens_power_total
+# mysens_power_heatpump
 kopplingslist inkommande från detektorn
 
 grön = 5V
